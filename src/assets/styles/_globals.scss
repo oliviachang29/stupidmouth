@@ -1,0 +1,132 @@
+* {
+    font-family: $FONT_NORMAL;
+    color: #705d30;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $FONT_HEADINGS;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h4 {
+    font-weight: bold;
+    margin-bottom: $SCALE-1;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    .bar {
+        background-color: #c26b6a;
+        width: $SCALE-4;
+        height: 5px;
+        margin: 0 20px;
+    }
+}
+
+button {
+    margin: 5px 0;
+    border: none !important;
+    border-radius: 0px !important;
+}
+
+.column-padding {
+    padding: 0 $SCALE-2;
+}
+
+.btn-primary {
+    background-color: #c26b6a;
+}
+
+.btn-success {
+    background-color: #178e96;
+}
+
+.btn-danger {
+    background-color: #ef3e4a;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-color: #efe8d8;
+    padding: $SCALE-3 0;
+    min-height: 100vh;
+    width: 100%;
+
+    h1 {
+        letter-spacing: 0;
+        text-align: center;
+    }
+}
+
+.header {
+    text-align: center;
+    margin-bottom: $SCALE-5;
+}
+
+.letter {
+    font-size: 10rem;
+    font-family: $FONT_HEADINGS;
+}
+
+#player-buttons {
+}
+
+#check-word-submit {
+    padding: 10px 0 $SCALE-1;
+    button {
+        margin: 0;
+    }
+}
+
+.part-of-speech {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.definition-list li,
+p {
+    margin-bottom: 5px;
+}
+
+.definition-list p {
+    font-size: 1.05rem;
+}
+
+#reset-points {
+    margin-bottom: $SCALE-1;
+}
+
+#reload {
+    margin-top: $SCALE-1;
+}
+
+.player-container {
+    text-align: center;
+    p {
+        font-size: 3rem;
+        font-family: $FONT_HEADINGS;
+    }
+    padding-bottom: $SCALE-1;
+}
+
+#points {
+    margin-top: $SCALE-2;
+    margin-bottom: 5px;
+}

@@ -1,9 +1,80 @@
 ---
 layout: base
 eleventyNavigation:
-  key: Home
+    key: Home
 ---
 
-<div class="container">
-    <h1>A blank 11ty project.</h1>
+<div
+    class="container-fluid hero hero__large d-flex justify-content-center align-items-center"
+>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <div class="bar"></div>
+                <h1>stupidmouth</h1>
+                <div class="bar"></div>
+            </div>
+            <p>the stupid online version of smartmouth</p>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-3 column-padding d-flex flex-column">
+                <h4>word</h4>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="first-letter-container">
+                            <p>first letter</p>
+                            <p class="letter" id="first-letter"></p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="last-letter-container">
+                            <p>last letter</p>
+                            <p class="letter" id="last-letter"></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="player-buttons" class="row"></div>
+                <button type="button" class="btn btn-secondary" id="reload">
+                    skip
+                </button>
+            </div>
+
+            <div class="col-lg-3 column-padding d-flex flex-column">
+                <h4>players</h4>
+                <button type="button" class="btn btn-success" id="add-player">
+                    add player
+                </button>
+                <button type="button" class="btn btn-danger" id="reset">
+                    reset
+                </button>
+
+                <h4 id="points">points</h4>
+                <div id="player-list" class="row">
+                    <span>no players yet!</span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 column-padding">
+                <h4>check word definition</h4>
+                <form id="check-word-submit">
+                    <div class="row col-md-6">
+                        <div class="col-9">
+                            <input
+                                placeholder="enter a word to look up..."
+                                type="text"
+                                class="form-control"
+                                id="check-word"
+                            />
+                        </div>
+                        <div class="col-3">
+                            <button type="submit" class="btn btn-primary">
+                                search
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div id="word-definition"></div>
+            </div>
+        </div>
+    </div>
 </div>

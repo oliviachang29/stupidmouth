@@ -1,0 +1,50 @@
+$BASE_UNIT: 100px;
+
+$FONT_NORMAL: 'DM Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+$FONT_HEADINGS: 'Staatliches', 'Space Grotesk', Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+
+$RATIO: 1.4;
+
+$SCALE--2: 1rem / $RATIO / $RATIO;
+$SCALE--1: 1rem / $RATIO;
+$SCALE-0: 1rem;
+$SCALE-1: 1rem * $RATIO;
+$SCALE-2: 1rem * $RATIO * $RATIO;
+$SCALE-3: 1rem * $RATIO * $RATIO * $RATIO;
+$SCALE-4: 1rem * $RATIO * $RATIO * $RATIO * $RATIO;
+$SCALE-5: 1rem * $RATIO * $RATIO * $RATIO * $RATIO * $RATIO;
+
+$COLOR_LIGHTER: #eaeaea;
+$COLOR_LIGHT: #ccc; // Do not use for text color
+$COLOR_MID: #767676; // Min contrast on white to pass WCAG2 AA
+$COLOR_DARK: #333;
+
+/* bootstrap media queries */
+$xs: 480px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xlg: 1300px;
+
+$turquoise: #01e7cb;
+$gold: #ffd672;
+$pink: #ff89bc;
+
+$orange: #ffa903;
+
+@mixin smooth-transition {
+    -webkit-transition: all 0.25s; /* Safari and Chrome */
+    -moz-transition: all 0.25s; /* Firefox */
+    -ms-transition: all 0.25s; /* IE 9 */
+    -o-transition: all 0.25s; /* Opera */
+    transition: all 0.25s;
+}
+
+@mixin fast-transition {
+    -webkit-transition: all 0.15s; /* Safari and Chrome */
+    -moz-transition: all 0.15s; /* Firefox */
+    -ms-transition: all 0.15s; /* IE 9 */
+    -o-transition: all 0.15s; /* Opera */
+    transition: all 0.15s;
+}
