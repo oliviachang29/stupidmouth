@@ -16,6 +16,9 @@ h1 {
 h4 {
     font-weight: bold;
     margin-bottom: $SCALE-1;
+    padding-bottom: 4px;
+    border-bottom: 5px solid #c26b6a;
+    width: max-content;
 }
 
 p {
